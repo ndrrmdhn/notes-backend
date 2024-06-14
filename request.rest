@@ -1,0 +1,27 @@
+GET http://localhost:3000/notes
+
+###
+GET http://localhost:3000/notes/1
+
+###
+POST  http://localhost:3000/notes
+Content-Type: application/json
+
+{
+    "title": "Makan Mie Ayam",
+    "datetime": "2024-06-14 13:00:00",
+    "note": "Enak Sekali"
+}
+
+###
+PUT http://localhost:3000/notes/1
+Content-Type: application/json
+
+{
+    "title": "Ganti Judul",
+    "datetime": "2024-06-14 13:00:00",
+    "note": "Update"
+}
+
+###
+DELETE    http://localhost:3000/notes/2
